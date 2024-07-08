@@ -1,10 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Carrer Point</title>
-  </head>
-  <body>
-    <h1>Carrer with Us</h1>
-    <img src = "job.jpg""
-  </body>
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Carrer Point</title>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="text-center mt-2 mb-4">Carrer with {{company_name}}</h1>
+    <img class="img-fluid" id="banner" src="static/job.jpg">
+    <h2 class="text-center mt-2 mb-4">
+      About Carrer Point
+    </h2>
+    <p class="lead">Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit.
+      Voluptates, dolorum error? Saepe
+      neque reiciendis atque voluptatibus
+      , suscipit illum architecto corrupti
+      libero, velit a esse? Itaque beatae,
+      aliquid modi non eaque, vel veritatis
+      magni porro asperiores, voluptas sed
+      adipisci. Officia officiis possimus
+      pariatur, ad voluptate laudantium
+      quidem facere, aliquam ducimus,
+      molestias dolore molestiae
+      laboriosam in. Dignissimos,
+      voluptatum consequatur? Ab
+      harum dolor, in nesciunt
+      dignissimos voluptatibus
+      at maxime nostrum? Dicta a
+      natus earum accusamus voluptas?
+      Animi, quaerat unde ex facere
+      similique provident corrupti
+      sapiente voluptatum enim libero
+      autem dicta ducimus laboriosam eaque voluptatibus,
+      non et! Sed inventore doloremque quibusdam ipsum
+      recusandae veniam consectetur, laboriosam impedit?
+      Laborum expedita perspiciatis, laboriosam delectu
+      s dolore accusamus earum laudantium, molestiae ipsum
+    </p>
+    <h2 class="text-center mt-2 mb-4">Open positions</h2>
+    <div>
+      {% for job in jobs %}
+        {% include 'jobitem.html' %}
+      {% endfor %}
+    </div>
+    <div class="text-center">
+      <button class="btn btn-primary bln-lg">Contact Us</button>
+
+      <p class="mt-4">Copyright 2024, Saket Ranjan</p>
+    </div>
+  </div>
+</body>
+
+
 </html>
