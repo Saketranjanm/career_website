@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  {% include 'nav.html' %}
   <div class="container">
     <h1 class="text-center mt-2 mb-4">Carrer with {{company_name}}</h1>
     <img class="img-fluid" id="banner" src="static/job.jpg">
@@ -52,11 +53,12 @@
       {% endfor %}
     </div>
     <div class="text-center">
-      <button class="btn btn-primary bln-lg">Contact Us</button>
+      <a href="mailto:saketranjan791@gmail.com?subject=Question%20about%20job%20openings&body=My%20name%3A%0D%0AMy%20Question%3A" class="btn btn-primary bln-lg">Contact Us</a>
 
-      <p class="mt-4">Copyright 2024, Saket Ranjan</p>
+      
     </div>
   </div>
+  {% include 'footer.html' %}
 </body>
 
 
